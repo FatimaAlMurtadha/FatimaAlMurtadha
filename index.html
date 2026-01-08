@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the website responsive on all devices -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts & Icons -->
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <!-- Page title -->
+    <title data-i18n="site_title">
+      Fatima Al-Murtadha | AI Software Developer
+    </title>
+  </head>
+  <body>
+    <header>
+      <a href="#work" class="logo">
+        <svg
+          class="logo-icon"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke="#ff3366"
+            stroke-width="3"
+          />
+          <path
+            d="M 30 40 L 50 60 L 70 40"
+            fill="none"
+            stroke="#ff3366"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="50" cy="70" r="3" fill="#ff3366" />
+        </svg>
+        <span>FATIMA</span>
+      </a>
+
+      <!-- Navigation links -->
+
+      <nav>
+        <!-- Desktop Navigation -->
+
+        <ul class="desktop-nav">
+          <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#career" data-i18n="nav_career">Career</a></li>
+          <li>
+            <a href="#documents" data-i18n="nav_documents">Certificates</a>
+          </li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="sv">SV</button>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+
+      <ul>
+        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#career" data-i18n="nav_career">Career</a></li>
+        <li><a href="#documents" data-i18n="nav_documents">Certificates</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="mobile-nav-footer">
+        <p data-i18n="mobile_footer_text">
+          Let's create something amazing together
+        </p>
+        <a href="mailto:sukaina77150@gmail.com">sukaina77150@gmail.com</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <h1 data-i18n="hero_name">Fatima Al-Murtadha</h1>
+          <h2 data-i18n="hero_title">AI-focused Full-Stack Developer</h2>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Bridging Law, Education, and Technology
+          </p>
+
+          <p class="hero-tagline" data-i18n="hero_tagline">
+            Dedicated, creative, and driven by growth.
+          </p>
+
+          <p class="hero-quote" data-i18n="hero_quote">
+            “I bring a unique blend of analytical thinking, pedagogical clarity,
+            and technical precision. My journey from law and education to
+            software development has shaped a developer who understands
+            systems—both human and technical—and thrives in collaborative
+            environments where structure, curiosity, and shared problem‑solving
+            drive the work forward.”
+          </p>
+
+          <a href="#projects" class="main-btn" data-i18n="hero_btn"
+            >View My Portfolio</a
+          >
+
+          <!-- Links -->
+
+          <ul class="social-icons">
+            <li>
+              <a href="mailto:sukaina77150@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/fatima-al-murtadha-8a19b9294/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/FatimaAlMurtadha" target="_blank"
+                ><i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero-image-wrapper">
+          <img
+            src="photoes/myPI.jpg"
+            alt="Fatima Al‑Murtadha"
+            class="hero-image"
+          />
+          <figcaption data-i18n="hero_caption">
+            AI, Law & Education in one journey
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about">
+        <h2 class="section-title" data-i18n="about_title">About Me</h2>
+
+        <div class="about-grid">
+          <article class="about-text">
+            <p data-i18n="about_p1">
+              I am an analytical, structured, and reliable future full‑stack
+              developer specializing in AI...
+            </p>
+            <p data-i18n="about_p2">
+              My work style combines technical precision with clear
+              communication...
+            </p>
+          </article>
+
+          <article class="about-quote">
+            <h3 data-i18n="about_note_title">Personal Note</h3>
+            <p data-i18n="about_note_text">
+              “My journey across countries, disciplines, and roles has taught me
+              resilience...”
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION-->
+      <section id="skills" class="skills">
+        <h2 class="section-title" data-i18n="skills_title">Skills Matrix</h2>
+
+        <div class="skills-grid">
+          <article class="skills-card">
+            <h3 data-i18n="skills_backend_title">Programming & Backend</h3>
+            <ul>
+              <li data-i18n="skills_backend_1">C#, Java, Python</li>
+              <li data-i18n="skills_backend_2">API design</li>
+              <li data-i18n="skills_backend_3">System architecture</li>
+              <li data-i18n="skills_backend_4">Object‑oriented programming</li>
+            </ul>
+          </article>
+          <article class="skills-card">
+            <h3 data-i18n="skills_db_title">Databases & SQL</h3>
+            <ul>
+              <li data-i18n="skills_db_1">ER modeling</li>
+              <li data-i18n="skills_db_2">Normalization</li>
+              <li data-i18n="skills_db_3">SQL queries</li>
+              <li data-i18n="skills_db_4">Data modeling</li>
+            </ul>
+          </article>
+
+          <article class="skills-card">
+            <h3 data-i18n="skills_frontend_title">Frontend</h3>
+            <ul>
+              <li data-i18n="skills_frontend_1">HTML, CSS, JavaScript</li>
+              <li data-i18n="skills_frontend_2">React</li>
+              <li data-i18n="skills_frontend_3">UI/UX awareness</li>
+            </ul>
+          </article>
+
+          <article class="skills-card">
+            <h3 data-i18n="skills_tools_title">Tools</h3>
+            <ul>
+              <li data-i18n="skills_tools_1">VS Code</li>
+              <li data-i18n="skills_tools_6">Rider</li>
+              <li data-i18n="skills_tools_4">Git & GitHub</li>
+              <li data-i18n="skills_tools_5">Postman</li>
+              <li data-i18n="skills_tools_3">NetBeans</li>
+              <li data-i18n="skills_tools_2">PyCharm</li>
+            </ul>
+          </article>
+
+          <article class="skills-card">
+            <h3 data-i18n="skills_agile_title">Agile Work</h3>
+            <ul>
+              <li data-i18n="skills_agile_1">SCRUM</li>
+              <li data-i18n="skills_agile_2">Kanban</li>
+              <li data-i18n="skills_agile_3">Testing</li>
+              <li data-i18n="skills_agile_4">Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects">
+        <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+
+        <div class="project-list">
+          <article class="project-card">
+            <h3 data-i18n="project_1_title">Trading Platform (C#)</h3>
+            <p data-i18n="project_1_text">
+              A trading platform with persistent data storage...
+            </p>
+            <a
+              href="https://github.com/FatimaAlMurtadha/Trading-Platform"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+          <article class="project-card">
+            <h3 data-i18n="project_2_title">
+              Travel Agency – Group Project (C#)
+            </h3>
+            <p data-i18n="project_2_text">
+              A booking system where users can create custom travel packages...
+            </p>
+            <a
+              href="https://github.com/FatimaAlMurtadha/Resbyra"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3 data-i18n="project_3_title">Patient Journal DB (SQL)</h3>
+            <p data-i18n="project_3_text">
+              A healthcare journal system with role‑based access...
+            </p>
+            <a
+              href="https://github.com/FatimaAlMurtadha/Patient_Journal_DB"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3 data-i18n="project_4_title">
+              Healthcare System – Group Project (C#)
+            </h3>
+            <p data-i18n="project_4_text">
+              A healthcare system focused on data modeling...
+            </p>
+            <a
+              href="https://github.com/FatimaAlMurtadha/Healthcaresystem"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- CAREER SECTION -->
+      <section id="career" class="career">
+        <h2 class="section-title" data-i18n="career_title">Career Journey</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date" data-i18n="career_1_date"
+              >2025 – Present</span
+            >
+            <h3 data-i18n="career_1_title">
+              Software Developer Student (AI Specialization)
+            </h3>
+            <p data-i18n="career_1_text">NBI Handelsakademin, Malmö.</p>
+            <a
+              href="https://www.nbi-handelsakademin.se/program/mjukvaruutvecklare-inriktning-ai/"
+              class="more-details"
+              data-i18n="career_link"
+              target="_blank"
+              >NBI-Handelsakademin</a
+            >
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date" data-i18n="career_2_date"
+              >2020 – 2022</span
+            >
+            <h3 data-i18n="career_2_title">
+              Lecturer in Law 
+            </h3>
+            <p data-i18n="career_2_text">Sana’a University, Yemen.</p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date" data-i18n="career_3_date"
+              >2016 – 2018</span
+            >
+            <h3 data-i18n="career_3_title">Teacher</h3>
+            <p data-i18n="career_3_text">Cambridge International School.</p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date" data-i18n="career_4_date"
+              >Volunteer 2012 - 2013</span
+            >
+            <h3 data-i18n="career_4_title">Volunteer Teacher</h3>
+            <p data-i18n="career_4_text">Khoolah Bent Alazwar School.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- DOCUMENTS SECTION -->
+      <section id="documents" class="documents">
+        <h2 class="section-title">Certificates & Documents</h2>
+
+        <div class="documents-grid">
+          <!-- CV -->
+          <article class="document-card">
+            <h3>CV</h3>
+            <ul>
+              <li>
+               <li>
+                <a href="files/Fatima-Al-Murtadha-EnglishCV-Resume..pdf" target="_blank"
+                  >English</a
+                >
+              </li>
+               <li>
+                <a href="files/Fatima-Al-Murtadha-SvenskaCV-Resume.pdf" target="_blank"
+                  >Svenska</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <!-- Other Certificates -->
+          <article class="document-card">
+            <h3>Recommendations</h3>
+            <ul>
+              <li>
+                <a href="files/RecommendationLetterENGLISH.pdf" target="_blank"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a href="files/RecommendationLetterARABIC.pdf" target="_blank">Arabic</a>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Sweden Documents -->
+          <article class="document-card">
+            <h3>Sweden Documents</h3>
+            <ul>
+              <h4>Recognition Statment (<a href="files/2 University documents UHR.pdf" target="_blank"
+                  >University - PDF</a> / <a href="files/UtlåtandeGymnasiet.pdf" target="_blank">High School - PDF</a>) </h4>
+              <h4>Languages (<a href="files/SvenskasomAndraSpråkSVA3.pdf" target="_blank">Swedish as a second language SVA3- PDF</a> / <a href="files/English 6.pdf" target="_blank">English 6 - PDF</a>)</h4>
+
+            <h4>More Courses in Sweden <a
+                  href="mailto:sukaina77150@gmail.com?subject=Requesting%20Documents"
+                  class="request-btn"
+                >
+                  Request Private Documents
+                </a></h4>
+             
+            </ul>
+          </article>
+
+          <!-- Yemen Documents -->
+
+          <!-- Experiences -->
+        
+          </article>
+          <article class="document-card">
+            <h3>Yemen Documents</h3>
+            <ul>
+            <h4>Experiences (<a href="files/CambridgeEnglish.jpg" target="_blank"
+                  >English - JPG</a> / <a href="files/CambridgeArabic.pdf" target="_blank">Arabic - PDF</a>) </h4>
+            <h4>Languages (<a href="files/ArabicLanguage.pdf" target="_blank">Arabic as a mother language "Academic"- PDF</a>)</h4>
+
+            <h4>More / University / School <a
+                  href="mailto:sukaina77150@gmail.com?subject=Requesting%20Documents"
+                  class="request-btn"
+                >
+                  Request Private Documents
+                </a></h4>
+                
+            </ul>
+          </article>
+
+          
+        </div>
+      </section>
+
+      <!-- Contact SECTION -->
+
+      <section id="contact" class="contact">
+        <h2 class="section-title" data-i18n="contact_title">
+          Contact & Languages
+        </h2>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3 data-i18n="contact_info_title">Contact</h3>
+            <p>
+              <strong data-i18n="contact_address_label">Address:</strong>
+              <span data-i18n="contact_address">Malmö, Sweden</span>
+            </p>
+
+            <p>
+              <strong data-i18n="contact_email_label">Email:</strong>
+              <span data-i18n="contact_email">sukaina77150@gmail.com</span>
+            </p>
+          </article>
+
+          <article class="contact-card">
+            <h3 data-i18n="contact_lang_title">Languages</h3>
+            <p data-i18n="lang_ar">Arabic — Native</p>
+            <p data-i18n="lang_en">English — Fluent</p>
+            <p data-i18n="lang_sv">Swedish — Advanced</p>
+          </article>
+
+          <article class="contact-card contact-social">
+            <h3 data-i18n="contact_connect_title">Connect</h3>
+            <ul class="social-icons dark">
+              <li>
+                <a href="mailto:sukaina77150@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/fatima-al-murtadha-8a19b9294/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/FatimaAlMurtadha" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 <span>Fatima Al-Murtadha</span></p>
+    </footer>
+  </body>
+</html>
