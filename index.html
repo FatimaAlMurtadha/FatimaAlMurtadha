@@ -116,7 +116,7 @@
           <h1 data-i18n="hero_name">Fatima Al-Murtadha</h1>
           <h2 data-i18n="hero_title">AI-focused Full-Stack Developer</h2>
           <p class="hero-subtitle" data-i18n="hero_subtitle">
-            Bridging Law, Education, and Technology
+            Bridging Law, Education, AI and Technology
           </p>
 
           <p class="hero-tagline" data-i18n="hero_tagline">
@@ -167,7 +167,7 @@
             class="hero-image"
           />
           <figcaption data-i18n="hero_caption">
-            AI, Law & Education in one journey
+            AI, Law, Software & Education in one journey
           </figcaption>
         </figure>
       </section>
@@ -206,8 +206,8 @@
           <article class="skills-card">
             <h3 data-i18n="skills_backend_title">Programming & Backend</h3>
             <ul>
-              <li data-i18n="skills_backend_1">C#, Java, Python</li>
-              <li data-i18n="skills_backend_2">API design</li>
+              <li data-i18n="skills_backend_1">C#, ASP.NET, Java, Python</li>
+              <li data-i18n="skills_backend_2">API design: .NET Minimal API, REST APIs, SignalR, SSE </li>
               <li data-i18n="skills_backend_3">System architecture</li>
               <li data-i18n="skills_backend_4">Object‑oriented programming</li>
             </ul>
@@ -215,6 +215,7 @@
           <article class="skills-card">
             <h3 data-i18n="skills_db_title">Databases & SQL</h3>
             <ul>
+              <li data-i18n="skills_db_3">SQL Server</li>
               <li data-i18n="skills_db_1">ER modeling</li>
               <li data-i18n="skills_db_2">Normalization</li>
               <li data-i18n="skills_db_3">SQL queries</li>
@@ -225,21 +226,33 @@
           <article class="skills-card">
             <h3 data-i18n="skills_frontend_title">Frontend</h3>
             <ul>
-              <li data-i18n="skills_frontend_1">HTML, CSS, JavaScript</li>
               <li data-i18n="skills_frontend_2">React</li>
+              <li data-i18n="skills_frontend_1">TypeScript, JavaScript</li>
+              <li> HTML, CSS, SCSS</li>
               <li data-i18n="skills_frontend_3">UI/UX awareness</li>
+            </ul>
+          </article>
+          <article class="skills-card">
+            <h3 data-i18n="skills_db_title">Testing & Quality</h3>
+            <ul>
+              <li data-i18n="skills_db_3">xUnit, TDD</li>
+              <li data-i18n="skills_db_1">Postman/Newman</li>
+              <li data-i18n="skills_db_2">Playwright E2E, BDD</li>
+              <li data-i18n="skills_db_3">Integration Testing</li>
             </ul>
           </article>
 
           <article class="skills-card">
-            <h3 data-i18n="skills_tools_title">Tools</h3>
+            <h3 data-i18n="skills_tools_title">DevOps & Tools</h3>
             <ul>
               <li data-i18n="skills_tools_1">VS Code</li>
               <li data-i18n="skills_tools_6">Rider</li>
-              <li data-i18n="skills_tools_4">Git & GitHub</li>
               <li data-i18n="skills_tools_5">Postman</li>
               <li data-i18n="skills_tools_3">NetBeans</li>
               <li data-i18n="skills_tools_2">PyCharm</li>
+              <li data-i18n="skills_tools_4">Git & GitHub</li>
+              <li>GitHub Actions & CI/CD & Docker</li>
+
             </ul>
           </article>
 
@@ -248,7 +261,6 @@
             <ul>
               <li data-i18n="skills_agile_1">SCRUM</li>
               <li data-i18n="skills_agile_2">Kanban</li>
-              <li data-i18n="skills_agile_3">Testing</li>
               <li data-i18n="skills_agile_4">Documentation</li>
             </ul>
           </article>
@@ -260,6 +272,65 @@
         <h2 class="section-title" data-i18n="projects_title">Projects</h2>
 
         <div class="project-list">
+          <article class="project-card">
+            <h3 data-i18n="project_1_title">Filmvisarna AB — Real-Time Cinema Booking System</h3>
+            <p data-i18n="project_1_text">
+              A fullstack cinema booking application built with React, TypeScript, C#, .NET Minimal API and SQL Server.
+              The system supports realtime seat synchronization, dynamic seat rendering, booking and cancellation flows, email confirmation handling and admin functionality.
+            </p>
+            <br>
+            <h2 data-i18n="project_1_title">Key Contributions</h2>
+            <p data-i18n="project_1_text">
+              <li>Implemented realtime seat synchronization using Server-Sent Events (SSE)</li>
+                <li>Designed dynamic seat rendering based on database-driven hall layouts</li>
+                <li>Improved API structure, validation and frontend/backend synchronization</li>
+                <li>Worked with SQL normalization, JOIN optimization and database views</li>
+                <li>Developed booking and cancellation workflows with email confirmation logic</li>
+                <li>Reduced unnecessary fetch calls and improved data flow consistency</li>
+                <li>Built GDPR-oriented cookie management system</li>
+                <li>Participated actively in architecture discussions and sprint planning</li>
+            </p>
+            <br>
+            <h2 data-i18n="project_1_title">Technical Focus</h2>
+            <p data-i18n="project_1_text">React • TypeScript • C# • .NET Minimal API • SQL Server • SSE • REST API • SCSS</p>
+            <a
+              href="https://github.com/alireza8850/filmvisarna-ab/"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3 data-i18n="project_1_title">WordMaster — Multiplayer Real-Time Word Game</h3>
+            <p data-i18n="project_1_text">
+              A multiplayer word game developed with React, TypeScript, ASP.NET and SignalR, with strong focus on testability, realtime synchronization, CI/CD and scalable frontend architecture.
+            </p>
+            <br>
+            <h2 data-i18n="project_1_title">Key Contributions</h2>
+            <p data-i18n="project_1_text">
+              <li>Refactored a large frontend component into modular hooks and service layers</li>
+              <li>Built reusable game orchestration logic using custom React hooks</li>
+              <li>Structured realtime communication with SignalR providers</li>
+              <li>Developed unit, integration, API and E2E testing strategies</li>
+              <li>Implemented BDD workflows using Playwright-BDD</li>
+              <li>Built CI/CD pipelines using GitHub Actions</li>
+              <li>Improved deployment stability and automated testing workflows</li>
+              <li>Solved complex multiplayer synchronization and state-management issues</li>
+            </p>
+            <br>
+            <h2 data-i18n="project_1_title">Technical Focus</h2>
+            <p data-i18n="project_1_text">React • TypeScript • ASP.NET • SignalR • xUnit • Playwright • Postman • GitHub Actions • Docker</p>
+            <a
+              href="https://github.com/Nehaasati/WordMaster"
+              class="more-details"
+              data-i18n="project_link"
+              target="_blank"
+              >GitHub</a
+            >
+          </article>
+          
           <article class="project-card">
             <h3 data-i18n="project_1_title">Trading Platform (C#)</h3>
             <p data-i18n="project_1_text">
